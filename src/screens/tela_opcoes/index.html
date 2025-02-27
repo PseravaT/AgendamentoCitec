@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento Teste</title>
+
+    <style>
+        body{
+            background-image:url("/src/assets/images/Background\ Robótica\ -\ 5340x3003px.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .caixa-menu{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 1);
+            padding: 0px;
+            border: 6px solid transparent;
+            border-image: linear-gradient(to right,#e0de41 , #2e4e94) 1;
+            border-radius: 33px;
+            width: clamp(340px, 90%, 769px);
+            height: 804px;
+        }
+
+/* 
+        .caixa-menu::before{
+            content: "";
+            position: absolute;
+            width: clamp(340px, 90%, 769px);
+            height: 804px;
+            ;
+            background: linear-gradient(to right,#e0de41 , #2e4e94);
+            border-radius: 33px;
+            padding: 6px;
+        } */
+        .texto-img-menu{
+            display: flex;
+            align-items: center;    
+            flex-direction: column;
+            height: 108px;
+        }
+
+        .logomarca-citec{
+            width: 167px;
+            height: 155px;
+            padding-top: 10px;
+        }
+
+        .legenda-tiulo{
+            color: #2f4f95;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+            position: relative;
+            top:-20px;
+            bottom: 0px;
+        }
+        
+        .icones-menu{
+            width: 108px;
+            height: 108px;
+        }
+        
+        .texto-img-menu{
+            font-size: 23px;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: #2f4f95;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container-menu{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 70px;
+        }
+        
+    </style>
+</head>
+<body>
+    <container class="caixa-menu">
+        <div class="texto-img-titulo">
+            <img src="/src/assets//Logomarca CITEC.png" class="logomarca-citec" alt="">
+            <p  class="legenda-tiulo">Agendamento</p>
+        </div>
+
+        <container class="container-menu">
+            <div class="texto-img-menu">
+                <img src="/src//assets/tdesign--chat-bubble-help.svg" alt="" class="icones-menu">
+                <legend class = "legenda imagem">O que é o citec?</legend>
+            </div>
+
+            <div class="texto-img-menu">
+                <img src="/src//assets/uiw--date.svg" alt="" class="icones-menu">
+                <legend>Novo agendamento</legend>
+            </div>
+
+            <div class="texto-img-menu">
+                <img src="/src//assets/gala--search.svg" alt="" class="icones-menu">
+                <legend>consultar agendamentos</legend>
+            </div>
+        </container>
+    </container>
+
+</body>
+</html>
